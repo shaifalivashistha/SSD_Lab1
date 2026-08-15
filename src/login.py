@@ -18,3 +18,6 @@ def login(roll_number, password, attempt=1):
         return True
     print("Invalid roll number or password.")
     return False
+
+def logout(roll_number):
+    print(f"{roll_number} has been logged out successfully.")
