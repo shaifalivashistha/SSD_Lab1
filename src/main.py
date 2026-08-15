@@ -5,6 +5,7 @@ from settings import view_settings, change_password, update_phone, toggle_notifi
 
 def show_menu():
     print("\n=== Welcome to Student Portal ===")
+
     print("1. Login")
     print("2. View Profile")
     print("3. Dashboard")
