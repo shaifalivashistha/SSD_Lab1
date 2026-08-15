@@ -3,6 +3,11 @@ ENROLLED_COURSES = {
     "CS2021002": ["Web Development", "Computer Networks"],
 }
 
+ATTENDANCE = {
+    "CS2021001": 87,
+    "CS2021002": 92,
+}
+
 def show_dashboard(roll_number):
     courses = ENROLLED_COURSES.get(roll_number)
     if not courses:
@@ -11,4 +16,6 @@ def show_dashboard(roll_number):
     print("Enrolled Courses:")
     for course in courses:
         print(f"  - {course}")
+    attendance = ATTENDANCE.get(roll_number, 0)
+    print(f"Overall Attendance: {attendance}%")
     return courses
