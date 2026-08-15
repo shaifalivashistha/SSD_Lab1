@@ -2,3 +2,7 @@
 
 ## Description
 A simple command-line Python application to manage user accounts, including login, profile, dashboard, and settings features.
+
+## Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
