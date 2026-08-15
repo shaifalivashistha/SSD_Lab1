@@ -26,3 +26,15 @@ def change_password(roll_number, old_password, new_password):
     settings['password'] = new_password
     print("Password updated successfully.")
     return True
+
+def update_phone(roll_number, new_phone):
+    settings = STUDENT_SETTINGS.get(roll_number)
+    if not settings:
+        print("Settings not found.")
+        return False
+    if not new_phone.isdigit() or len(new_phone) != 10:
+        print("Invalid phone number. Must be 10 digits.")
+        return False
+    settings['phone'] = new_phone
+    print("Phone number updated successfully.")
+    return True
