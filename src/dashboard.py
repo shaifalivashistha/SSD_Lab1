@@ -26,3 +26,18 @@ def check_attendance_warning(roll_number):
         print("Warning: Your attendance is below the required 75% threshold.")
         return True
     return False
+
+GRADES = {
+    "CS2021001": {"Data Structures": "A", "Operating Systems": "B+", "Database Systems": "A-"},
+    "CS2021002": {"Web Development": "A", "Computer Networks": "B"},
+}
+
+def show_grades(roll_number):
+    grades = GRADES.get(roll_number)
+    if not grades:
+        print("No grades available yet.")
+        return None
+    print("Grades:")
+    for course, grade in grades.items():
+        print(f"  {course}: {grade}")
+    return grades
