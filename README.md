@@ -29,3 +29,15 @@ Follow the on-screen prompts to log in and access your profile, dashboard, or se
 - `profile.py` - Manages user profile data
 - `dashboard.py` - Displays user dashboard
 - `settings.py` - Manages user settings
+
+## Usage Example
+```
+=== User Management System ===
+1. Login
+2. View Profile
+3. Dashboard
+4. Settings
+5. Exit
+Enter your choice (1-5): 1
+Redirecting to login...
+```
