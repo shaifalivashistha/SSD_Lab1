@@ -19,3 +19,10 @@ def show_dashboard(roll_number):
     attendance = ATTENDANCE.get(roll_number, 0)
     print(f"Overall Attendance: {attendance}%")
     return courses
+
+def check_attendance_warning(roll_number):
+    attendance = ATTENDANCE.get(roll_number, 0)
+    if attendance < 75:
+        print("Warning: Your attendance is below the required 75% threshold.")
+        return True
+    return False
