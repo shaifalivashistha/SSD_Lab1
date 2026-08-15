@@ -11,3 +11,18 @@ def view_settings(roll_number):
     print(f"Phone: {settings['phone']}")
     print(f"Notifications: {'On' if settings['notifications'] else 'Off'}")
     return settings
+
+def change_password(roll_number, old_password, new_password):
+    settings = STUDENT_SETTINGS.get(roll_number)
+    if not settings:
+        print("Settings not found.")
+        return False
+    if settings['password'] != old_password:
+        print("Old password is incorrect.")
+        return False
+    if len(new_password) < 6:
+        print("New password must be at least 6 characters.")
+        return False
+    settings['password'] = new_password
+    print("Password updated successfully.")
+    return True
