@@ -13,3 +13,15 @@ def view_profile(roll_number):
     print(f"Year: {profile['year']}")
     print(f"Email: {profile['email']}")
     return profile
+
+def edit_profile(roll_number, field, new_value):
+    profile = STUDENT_PROFILES.get(roll_number)
+    if not profile:
+        print("Profile not found.")
+        return False
+    if field not in profile:
+        print(f"Invalid field: {field}")
+        return False
+    profile[field] = new_value
+    print(f"Updated {field} to {new_value}.")
+    return True
