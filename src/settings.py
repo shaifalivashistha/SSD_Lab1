@@ -38,3 +38,13 @@ def update_phone(roll_number, new_phone):
     settings['phone'] = new_phone
     print("Phone number updated successfully.")
     return True
+
+def toggle_notifications(roll_number):
+    settings = STUDENT_SETTINGS.get(roll_number)
+    if not settings:
+        print("Settings not found.")
+        return None
+    settings['notifications'] = not settings['notifications']
+    state = "On" if settings['notifications'] else "Off"
+    print(f"Notifications turned {state}.")
+    return settings['notifications']
