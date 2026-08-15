@@ -47,3 +47,6 @@ This project is created for academic purposes as part of a lab assignment.
 
 ## Author
 Shaifali Vashistha
+
+## Acknowledgments
+Built as part of the Git Version Control lab session, applying core Git concepts including branching, merging, and commit history management.
