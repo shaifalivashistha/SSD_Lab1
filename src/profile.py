@@ -1,3 +1,4 @@
+
 STUDENT_PROFILES = {
     "CS2021001": {"name": "Aarav Sharma", "department": "Computer Science", "year": 3, "email": "aarav@college.edu"},
     "CS2021002": {"name": "Meera Iyer", "department": "Computer Science", "year": 2, "email": "meera@college.edu"},
@@ -28,3 +29,6 @@ def edit_profile(roll_number, field, new_value):
     profile[field] = new_value
     print(f"Updated {field} to {new_value}.")
     return True
+
+# TODO: add profile picture upload
+
