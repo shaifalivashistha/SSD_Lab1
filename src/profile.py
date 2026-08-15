@@ -22,6 +22,9 @@ def edit_profile(roll_number, field, new_value):
     if field not in profile:
         print(f"Invalid field: {field}")
         return False
+    if field == "email" and "@" not in new_value:
+        print("Invalid email format.")
+        return False
     profile[field] = new_value
     print(f"Updated {field} to {new_value}.")
     return True
