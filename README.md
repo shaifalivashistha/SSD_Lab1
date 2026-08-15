@@ -16,3 +16,9 @@ A simple command-line Python application to manage user accounts, including logi
    ```
    cd SSD_Lab1
    ```
+
+## Running the Application
+```
+python main.py
+```
+Follow the on-screen prompts to log in and access your profile, dashboard, or settings.
