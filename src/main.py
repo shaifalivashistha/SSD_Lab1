@@ -1,3 +1,5 @@
+from login import login
+
 def show_menu():
     print("\n=== Student Portal ===")
     print("1. Login")
@@ -12,7 +14,9 @@ def main():
         choice = input("Enter your choice (1-5): ")
 
         if choice == "1":
-            print("Redirecting to login...")
+            roll = input("Roll number: ")
+            pwd = input("Password: ")
+            login(roll, pwd)
         elif choice == "2":
             print("Redirecting to profile...")
         elif choice == "3":
