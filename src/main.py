@@ -1,4 +1,5 @@
 from login import login
+from profile import view_profile
 
 def show_menu():
     print("\n=== Student Portal ===")
@@ -18,7 +19,8 @@ def main():
             pwd = input("Password: ")
             login(roll, pwd)
         elif choice == "2":
-            print("Redirecting to profile...")
+            roll = input("Enter roll number: ")
+            view_profile(roll)
         elif choice == "3":
             print("Redirecting to dashboard...")
         elif choice == "4":
