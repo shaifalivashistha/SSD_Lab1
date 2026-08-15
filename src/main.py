@@ -4,7 +4,7 @@ from dashboard import show_dashboard, check_attendance_warning, show_grades
 from settings import view_settings, change_password, update_phone, toggle_notifications
 
 def show_menu():
-    print("\n=== Student Portal ===")
+    print("\n=== Student Portal (v2) ===")
     print("1. Login")
     print("2. View Profile")
     print("3. Dashboard")
