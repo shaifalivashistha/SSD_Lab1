@@ -1,7 +1,7 @@
-#SSD LAB 1 - User Management Systems
+#SSD LAB 1 - Student Portals
 
 ## Description
-A simple command-line Python application to manage user accounts, including login, profile, dashboard, and settings features.
+A simple command-line Python application to allow students to log in and access their profile, dashboard, and settings.
 
 ## Prerequisites
 - Python 3.8 or higher
@@ -32,7 +32,7 @@ Follow the on-screen prompts to log in and access your profile, dashboard, or se
 
 ## Usage Example
 ```
-=== User Management System ===
+=== Student Portal ===
 1. Login
 2. View Profile
 3. Dashboard
