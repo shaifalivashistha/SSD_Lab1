@@ -22,3 +22,10 @@ A simple command-line Python application to manage user accounts, including logi
 python main.py
 ```
 Follow the on-screen prompts to log in and access your profile, dashboard, or settings.
+
+## Project Structure
+- `main.py` - Entry point of the application
+- `login.py` - Handles user authentication
+- `profile.py` - Manages user profile data
+- `dashboard.py` - Displays user dashboard
+- `settings.py` - Manages user settings
