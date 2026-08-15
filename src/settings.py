@@ -48,3 +48,4 @@ def toggle_notifications(roll_number):
     state = "On" if settings['notifications'] else "Off"
     print(f"Notifications turned {state}.")
     return settings['notifications']
+# Emergency contact feature planned
