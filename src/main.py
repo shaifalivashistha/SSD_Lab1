@@ -1,6 +1,7 @@
 from login import login
 from profile import view_profile
 from dashboard import show_dashboard, check_attendance_warning, show_grades
+from settings import view_settings, change_password, update_phone, toggle_notifications
 
 def show_menu():
     print("\n=== Student Portal ===")
@@ -28,7 +29,8 @@ def main():
             check_attendance_warning(roll)
             show_grades(roll)
         elif choice == "4":
-            print("Redirecting to settings...")
+            roll = input("Enter roll number: ")
+            view_settings(roll)
         elif choice == "5":
             print("Goodbye!")
             break
