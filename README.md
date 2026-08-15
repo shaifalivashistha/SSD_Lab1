@@ -44,3 +44,6 @@ Redirecting to login...
 
 ## License
 This project is created for academic purposes as part of a lab assignment.
+
+## Author
+Shaifali Vashistha
