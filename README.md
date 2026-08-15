@@ -41,3 +41,6 @@ Follow the on-screen prompts to log in and access your profile, dashboard, or se
 Enter your choice (1-5): 1
 Redirecting to login...
 ```
+
+## License
+This project is created for academic purposes as part of a lab assignment.
